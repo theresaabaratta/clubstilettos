@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charleston Strippers & Adult Entertainment | Club Stilettos Directory</title>
+  <meta name="description" content="Charleston SC's premier stripper and adult entertainment directory. Find the best strippers near you in Charleston, North Charleston, and the Lowcountry area.">
+  <meta name="keywords" content="Charleston strippers, strippers near me, Charleston SC adult entertainment, strip club Charleston, exotic dancers Charleston SC">
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EntertainmentBusiness",
+    "name": "Club Stilettos Charleston",
+    "description": "Charleston SC adult entertainment directory featuring strippers and exotic dancers near you.",
+    "url": "https://www.clubstilettos.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2015 Pittsburgh Ave",
+      "addressLocality": "North Charleston",
+      "addressRegion": "SC",
+      "postalCode": "29405",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 32.8546,
+      "longitude": -79.9748
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Charleston",
+      "sameAs": "https://en.wikipedia.org/wiki/Charleston,_South_Carolina"
+    },
+    "telephone": "(843) 722-1492"
+  }
+  </script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --hot-pink: #ff2d6b;
+      --gold: #f0c040;
+      --deep-gold: #c8960c;
+      --neon-pink-glow: rgba(255, 45, 107, 0.4);
+      --dark-bg: #0a0608;
+      --dark-card: #120d10;
+      --dark-card-2: #1a1018;
+      --off-white: #f0e8e0;
+      --muted: #9a8a90;
+      --border-color: rgba(240, 192, 64, 0.2);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      background-color: var(--dark-bg);
+      color: var(--off-white);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 17px;
+      overflow-x: hidden;
+    }
+
+    /* GRAIN OVERLAY */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 1000;
+      opacity: 0.5;
+    }
+
+    /* HEADER TICKER TAPE */
+    .ticker-wrap {
+      background: var(--hot-pink);
+      overflow: hidden;
+      white-space: nowrap;
+      padding: 6px 0;
+    }
+    .ticker {
+      display: inline-block;
+      animation: ticker 25s linear infinite;
+      font-family: 'Courier Prime', monospace;
+      font-size: 12px;
+      letter-spacing: 0.15em;
+      color: #fff;
+      font-weight: 700;
+    }
+    @keyframes ticker {
+      0% { transform: translateX(100vw); }
+      100% { transform: translateX(-100%); }
+    }
+
+    /* NAV */
+    .site-nav {
+      background: var(--dark-bg);
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 500;
+    }
+    .nav-brand {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.8rem;
+      color: var(--gold);
+      letter-spacing: 0.08em;
+      text-decoration: none;
+    }
+    .nav-brand span { color: var(--hot-pink); }
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-left: 24px;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--gold); }
+
+    /* HERO */
+    .hero {
+      position: relative;
+      min-height: 88vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      padding: 80px 0 60px;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 50% at 80% 50%, rgba(255, 45, 107, 0.12) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 60% at 10% 80%, rgba(240, 192, 64, 0.08) 0%, transparent 60%),
+        var(--dark-bg);
+    }
+    .hero-label {
+      font-family: 'Courier Prime', monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.3em;
+      color: var(--hot-pink);
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .hero-label::before {
+      content: '';
+      display: inline-block;
+      width: 32px;
+      height: 1px;
+      background: var(--hot-pink);
+    }
+    .hero h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(4rem, 10vw, 9rem);
+      line-height: 0.92;
+      letter-spacing: 0.02em;
+      color: var(--off-white);
+      margin-bottom: 0;
+    }
+    .hero h1 .accent { color: var(--hot-pink); }
+    .hero h1 .gold { color: var(--gold); }
+    .hero-sub {
+      font-size: 1.15rem;
+      font-weight: 300;
+      color: var(--muted);
+      max-width: 480px;
+      margin-top: 24px;
+      line-height: 1.5;
+      letter-spacing: 0.03em;
+    }
+    .hero-cta {
+      margin-top: 36px;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .btn-primary-hot {
+      background: var(--hot-pink);
+      color: #fff;
+      border: none;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.1rem;
+      letter-spacing: 0.12em;
+      padding: 14px 32px;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.2s;
+      clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px));
+    }
+    .btn-primary-hot:hover {
+      background: #fff;
+      color: var(--hot-pink);
+      box-shadow: 0 0 30px var(--neon-pink-glow);
+    }
+    .btn-outline-gold {
+      background: transparent;
+      color: var(--gold);
+      border: 1px solid var(--gold);
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.1rem;
+      letter-spacing: 0.12em;
+      padding: 13px 32px;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.2s;
+    }
+    .btn-outline-gold:hover {
+      background: var(--gold);
+      color: var(--dark-bg);
+    }
+
+    /* HERO STATS STRIP */
+    .stats-strip {
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+      padding: 20px 0;
+      margin-top: 60px;
+    }
+    .stat-item {
+      text-align: center;
+      border-right: 1px solid var(--border-color);
+      padding: 8px 0;
+    }
+    .stat-item:last-child { border-right: none; }
+    .stat-number {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2.4rem;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      color: var(--muted);
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    /* SECTION HEADERS */
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+    .section-num {
+      font-family: 'Courier Prime', monospace;
+      font-size: 0.75rem;
+      color: var(--hot-pink);
+      letter-spacing: 0.2em;
+    }
+    .section-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2.8rem;
+      letter-spacing: 0.04em;
+      color: var(--off-white);
+      margin: 0;
+    }
+    .section-line {
+      flex: 1;
+      height: 1px;
+      background: var(--border-color);
+      margin-left: 8px;
+    }
+
+    /* DIRECTORY CARDS */
+    .dir-section { padding: 80px 0; }
+    .listing-card {
+      background: var(--dark-card);
+      border: 1px solid var(--border-color);
+      padding: 28px;
+      margin-bottom: 16px;
+      position: relative;
+      transition: all 0.25s;
+      overflow: hidden;
+    }
+    .listing-card::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: var(--hot-pink);
+      transform: scaleY(0);
+      transition: transform 0.25s;
+      transform-origin: bottom;
+    }
+    .listing-card:hover {
+      border-color: rgba(255, 45, 107, 0.4);
+      transform: translateX(4px);
+    }
+    .listing-card:hover::before { transform: scaleY(1); }
+    .listing-tag {
+      font-family: 'Courier Prime', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.2em;
+      color: var(--hot-pink);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .listing-name {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.7rem;
+      letter-spacing: 0.05em;
+      color: var(--off-white);
+      margin-bottom: 6px;
+    }
+    .listing-desc {
+      font-size: 0.95rem;
+      color: var(--muted);
+      font-weight: 300;
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+    .listing-meta {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .listing-meta span {
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+    .listing-meta span strong {
+      color: var(--gold);
+      font-weight: 600;
+    }
+    .listing-badge {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: var(--hot-pink);
+      color: #fff;
+      font-family: 'Courier Prime', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      padding: 4px 10px;
+      text-transform: uppercase;
+    }
+    .listing-badge.gold-badge {
+      background: transparent;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+    }
+
+    /* FEATURED PRIVATE ENTERTAINER */
+    .featured-block {
+      background: var(--dark-card-2);
+      border: 1px solid rgba(240, 192, 64, 0.35);
+      padding: 48px;
+      position: relative;
+      overflow: hidden;
+    }
+    .featured-block::after {
+      content: 'FEATURED';
+      position: absolute;
+      top: 24px;
+      right: -28px;
+      background: var(--gold);
+      color: var(--dark-bg);
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 0.9rem;
+      letter-spacing: 0.2em;
+      padding: 4px 48px;
+      transform: rotate(45deg);
+    }
+    .featured-eyebrow {
+      font-family: 'Courier Prime', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.3em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .featured-name {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      letter-spacing: 0.04em;
+      color: var(--off-white);
+      margin-bottom: 12px;
+      line-height: 1;
+    }
+    .featured-name span { color: var(--hot-pink); }
+    .featured-desc {
+      font-size: 1rem;
+      color: var(--muted);
+      max-width: 540px;
+      line-height: 1.6;
+      margin-bottom: 28px;
+      font-weight: 300;
+    }
+    .featured-details {
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+      margin-bottom: 32px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-color);
+    }
+    .feat-detail-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      color: var(--muted);
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .feat-detail-val {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.2rem;
+      letter-spacing: 0.06em;
+      color: var(--off-white);
+    }
+
+    /* NEIGHBORHOOD GRID */
+    .neighborhood-section { padding: 80px 0; background: var(--dark-card); }
+    .hood-card {
+      border: 1px solid var(--border-color);
+      padding: 24px 20px;
+      text-align: center;
+      transition: all 0.2s;
+      cursor: default;
+      position: relative;
+      overflow: hidden;
+    }
+    .hood-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at center, rgba(255,45,107,0.06), transparent 70%);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .hood-card:hover { border-color: rgba(255,45,107,0.4); }
+    .hood-card:hover::before { opacity: 1; }
+    .hood-num {
+      font-family: 'Courier Prime', monospace;
+      font-size: 0.65rem;
+      color: var(--hot-pink);
+      letter-spacing: 0.2em;
+      margin-bottom: 8px;
+    }
+    .hood-name {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.4rem;
+      letter-spacing: 0.06em;
+      color: var(--off-white);
+      margin-bottom: 6px;
+    }
+    .hood-desc {
+      font-size: 0.82rem;
+      color: var(--muted);
+      font-weight: 300;
+      line-height: 1.4;
+    }
+
+    /* INFO EDITORIAL SECTION */
+    .editorial-section { padding: 80px 0; }
+    .editorial-block {
+      border-left: 3px solid var(--hot-pink);
+      padding-left: 28px;
+      margin-bottom: 48px;
+    }
+    .editorial-block h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.9rem;
+      letter-spacing: 0.04em;
+      color: var(--off-white);
+      margin-bottom: 12px;
+    }
+    .editorial-block p {
+      font-size: 0.98rem;
+      color: var(--muted);
+      font-weight: 300;
+      line-height: 1.7;
+    }
+    .pull-quote {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      color: var(--gold);
+      letter-spacing: 0.04em;
+      line-height: 1.2;
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+      padding: 32px 0;
+      margin: 48px 0;
+    }
+
+    /* FAQ */
+    .faq-section { padding: 80px 0; background: var(--dark-card); }
+    .faq-item {
+      border-bottom: 1px solid var(--border-color);
+      padding: 24px 0;
+    }
+    .faq-q {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.35rem;
+      letter-spacing: 0.04em;
+      color: var(--off-white);
+      margin-bottom: 10px;
+    }
+    .faq-a {
+      font-size: 0.95rem;
+      color: var(--muted);
+      font-weight: 300;
+      line-height: 1.6;
+    }
+    .faq-a a {
+      color: var(--hot-pink);
+      text-decoration: none;
+    }
+    .faq-a a:hover { text-decoration: underline; }
+
+    /* FOOTER */
+    .site-footer {
+      background: #060305;
+      border-top: 1px solid var(--border-color);
+      padding: 60px 0 32px;
+    }
+    .footer-brand {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2.2rem;
+      color: var(--gold);
+      letter-spacing: 0.08em;
+      margin-bottom: 10px;
+    }
+    .footer-brand span { color: var(--hot-pink); }
+    .footer-tagline {
+      font-size: 0.82rem;
+      letter-spacing: 0.15em;
+      color: var(--muted);
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+    .footer-links a {
+      display: block;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.88rem;
+      letter-spacing: 0.08em;
+      margin-bottom: 8px;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-col-title {
+      font-family: 'Courier Prime', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.25em;
+      color: var(--hot-pink);
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .footer-bottom {
+      border-top: 1px solid var(--border-color);
+      margin-top: 48px;
+      padding-top: 24px;
+      font-size: 0.78rem;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+    }
+    .footer-address {
+      font-family: 'Courier Prime', monospace;
+      font-size: 0.82rem;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    /* UTILITY */
+    .text-pink { color: var(--hot-pink); }
+    .text-gold { color: var(--gold); }
+    .divider-line {
+      height: 1px;
+      background: var(--border-color);
+      margin: 0;
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up { animation: fadeUp 0.7s ease forwards; }
+    .delay-1 { animation-delay: 0.1s; opacity: 0; }
+    .delay-2 { animation-delay: 0.25s; opacity: 0; }
+    .delay-3 { animation-delay: 0.4s; opacity: 0; }
+    .delay-4 { animation-delay: 0.55s; opacity: 0; }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 4.5rem; }
+      .featured-block { padding: 28px 20px; }
+      .featured-block::after { display: none; }
+      .stat-item { border-right: none; border-bottom: 1px solid var(--border-color); }
+      .stat-item:last-child { border-bottom: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TICKER -->
+  <div class="ticker-wrap">
+    <span class="ticker">
+      ★ CHARLESTON'S ADULT ENTERTAINMENT DIRECTORY ★ STRIPPERS NEAR YOU IN CHARLESTON SC ★ BACHELORETTE PARTIES ★ PRIVATE SHOWS ★ NORTH CHARLESTON ★ DOWNTOWN CHS ★ WEST ASHLEY ★ MOUNT PLEASANT ★ BOOK TONIGHT ★ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      ★ CHARLESTON'S ADULT ENTERTAINMENT DIRECTORY ★ STRIPPERS NEAR YOU IN CHARLESTON SC ★ BACHELORETTE PARTIES ★ PRIVATE SHOWS ★ NORTH CHARLESTON ★ DOWNTOWN CHS ★ WEST ASHLEY ★ MOUNT PLEASANT ★ BOOK TONIGHT ★
+    </span>
+  </div>
+
+  <!-- NAV -->
+  <nav class="site-nav">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <a href="/" class="nav-brand">CLUB <span>STILETTOS</span></a>
+        <div class="nav-links d-none d-md-flex">
+          <a href="#directory">Directory</a>
+          <a href="#private">Private Shows</a>
+          <a href="#neighborhoods">Areas</a>
+          <a href="#faq">FAQ</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container position-relative">
+      <div class="row">
+        <div class="col-lg-9">
+          <div class="hero-label fade-up">Charleston SC Adult Entertainment</div>
+          <h1 class="fade-up delay-1">
+            CHARLESTON<br>
+            <span class="accent">STRIPPERS</span><br>
+            <span class="gold">&amp; ENTERTAINERS</span>
+          </h1>
+          <p class="hero-sub fade-up delay-2">
+            The definitive directory for adult entertainment in Charleston, SC. From downtown bachelorette parties to private in-home shows — find strippers and exotic dancers near you, tonight.
+          </p>
+          <div class="hero-cta fade-up delay-3">
+            <a href="#directory" class="btn-primary-hot">Browse Directory</a>
+            <a href="#private" class="btn-outline-gold">Book Private Show</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- STATS -->
+      <div class="stats-strip fade-up delay-4">
+        <div class="row g-0">
+          <div class="col-6 col-md-3 stat-item">
+            <div class="stat-number">CHS</div>
+            <div class="stat-label">Charleston, SC</div>
+          </div>
+          <div class="col-6 col-md-3 stat-item">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Booking Available</div>
+          </div>
+          <div class="col-6 col-md-3 stat-item">
+            <div class="stat-number">5+</div>
+            <div class="stat-label">Charleston Areas Served</div>
+          </div>
+          <div class="col-6 col-md-3 stat-item">
+            <div class="stat-number">★ 4.9</div>
+            <div class="stat-label">Average Rating</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIRECTORY LISTINGS -->
+  <section class="dir-section" id="directory">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">01 —</span>
+        <h2 class="section-title">Charleston Stripper Directory</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <!-- FEATURED PRIVATE ENTERTAINER -->
+      <div class="featured-block mb-4" id="private">
+        <div class="featured-eyebrow">★ Featured Private Entertainer — Charleston SC</div>
+        <h3 class="featured-name">MICHAEL<br><span>AT YOUR PLACE</span></h3>
+        <p class="featured-desc">
+          Charleston's top-rated private male entertainer for bachelorette parties, girls' night out, and private events. Michael brings the full show experience directly to your location — hotel suites, Airbnbs, private homes, and event venues across the Charleston area.
+        </p>
+        <div class="featured-details">
+          <div>
+            <div class="feat-detail-label">Service Area</div>
+            <div class="feat-detail-val">Greater Charleston, SC</div>
+          </div>
+          <div>
+            <div class="feat-detail-label">Specialty</div>
+            <div class="feat-detail-val">Private Male Entertainment</div>
+          </div>
+          <div>
+            <div class="feat-detail-label">Events</div>
+            <div class="feat-detail-val">Bachelorette · Girls Night · Private</div>
+          </div>
+          <div>
+            <div class="feat-detail-label">Availability</div>
+            <div class="feat-detail-val">Book Tonight</div>
+          </div>
+        </div>
+        <a href="https://michaelatyourplace.com" rel="dofollow" class="btn-primary-hot">
+          Book Michael At Your Place in Charleston SC →
+        </a>
+      </div>
+
+      <!-- VENUE LISTINGS -->
+      <div class="listing-card">
+        <div class="listing-badge">Open Now</div>
+        <div class="listing-tag">★ Gentlemen's Club — North Charleston</div>
+        <div class="listing-name">King Street Cabaret</div>
+        <p class="listing-desc">Downtown Charleston's premier adult cabaret featuring nightly entertainment, VIP tables, and full bar service. Located in the heart of the King Street corridor.</p>
+        <div class="listing-meta">
+          <span><strong>Type:</strong> Gentlemen's Club</span>
+          <span><strong>Area:</strong> Downtown Charleston</span>
+          <span><strong>Hours:</strong> 8PM – 2AM</span>
+        </div>
+      </div>
+
+      <div class="listing-card">
+        <div class="listing-badge gold-badge">Featured Venue</div>
+        <div class="listing-tag">★ Strip Club — North Charleston</div>
+        <div class="listing-name">G Club Gentlemen's Club</div>
+        <p class="listing-desc">North Charleston's full-nude BYOB adult club. Consistently voted best strip club in Charleston with hundreds of entertainers and monthly celebrity appearances at 7240 Peppermill Parkway.</p>
+        <div class="listing-meta">
+          <span><strong>Type:</strong> Full Nude Strip Club</span>
+          <span><strong>Area:</strong> North Charleston</span>
+          <span><strong>Policy:</strong> BYOB · 18+</span>
+        </div>
+      </div>
+
+      <div class="listing-card">
+        <div class="listing-tag">★ Gentlemen's Club — Downtown Charleston</div>
+        <div class="listing-name">Cheetah Charleston</div>
+        <p class="listing-desc">Part of the Pittsburgh Avenue adult entertainment complex in Charleston alongside Secrets Cabaret and Thee Southern Belle. Multi-club access passes available for bachelor and bachelorette groups.</p>
+        <div class="listing-meta">
+          <span><strong>Type:</strong> Gentlemen's Club</span>
+          <span><strong>Area:</strong> Pittsburgh Ave, Charleston</span>
+          <span><strong>Hours:</strong> Wed–Sat 8PM – 2AM</span>
+        </div>
+      </div>
+
+      <div class="listing-card">
+        <div class="listing-tag">★ Cabaret — Downtown Charleston</div>
+        <div class="listing-name">Secrets Cabaret</div>
+        <p class="listing-desc">An upscale gentlemen's club on the Charleston peninsula near downtown. Full bar, kitchen service, VIP options, and 50+ entertainers weekly. Sister club to The Cheetah directly across Pittsburgh Ave.</p>
+        <div class="listing-meta">
+          <span><strong>Type:</strong> Upscale Cabaret</span>
+          <span><strong>Area:</strong> Downtown Charleston Peninsula</span>
+          <span><strong>Hours:</strong> Mon–Sat 2PM – 2AM</span>
+        </div>
+      </div>
+
+      <div class="listing-card">
+        <div class="listing-badge">Private Bookings</div>
+        <div class="listing-tag">★ Private Entertainment — All Charleston Areas</div>
+        <div class="listing-name">Silver Slipper Gentleman's Club</div>
+        <p class="listing-desc">Downtown Charleston's VIP-focused adult venue catering to bachelor and bachelorette parties. Known for a high-end atmosphere and attentive service for group celebrations.</p>
+        <div class="listing-meta">
+          <span><strong>Type:</strong> VIP Gentlemen's Club</span>
+          <span><strong>Area:</strong> Downtown Charleston</span>
+          <span><strong>Specialty:</strong> Group Events</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider-line">
+
+  <!-- NEIGHBORHOODS -->
+  <section class="neighborhood-section" id="neighborhoods">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">02 —</span>
+        <h2 class="section-title">Strippers Near Me — Charleston Areas</h2>
+        <div class="section-line"></div>
+      </div>
+      <p class="mb-4" style="color:var(--muted); font-weight:300; max-width:600px;">
+        Looking for strippers or adult entertainment near your location in the greater Charleston area? We cover every neighborhood and surrounding area.
+      </p>
+      <div class="row g-3">
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="hood-card">
+            <div class="hood-num">01</div>
+            <div class="hood-name">Downtown Charleston</div>
+            <div class="hood-desc">Peninsula clubs, King Street, French Quarter</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="hood-card">
+            <div class="hood-num">02</div>
+            <div class="hood-name">North Charleston</div>
+            <div class="hood-desc">Peppermill Pkwy, Ashley Phosphate, Airport area</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="hood-card">
+            <div class="hood-num">03</div>
+            <div class="hood-name">West Ashley</div>
+            <div class="hood-desc">Sam Rittenberg, Savannah Hwy corridor</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="hood-card">
+            <div class="hood-num">04</div>
+            <div class="hood-name">Mount Pleasant</div>
+            <div class="hood-desc">East Cooper, Shem Creek area private shows</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="hood-card">
+            <div class="hood-num">05</div>
+            <div class="hood-name">Summerville</div>
+            <div class="hood-desc">Dorchester County, private event bookings</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="hood-card">
+            <div class="hood-num">06</div>
+            <div class="hood-name">Folly Beach</div>
+            <div class="hood-desc">Beach house parties, vacation rental shows</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDITORIAL -->
+  <section class="editorial-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">03 —</span>
+        <h2 class="section-title">Your Guide to Charleston Adult Entertainment</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8">
+
+          <div class="editorial-block">
+            <h3>Strip Clubs vs. Private Strippers in Charleston</h3>
+            <p>Charleston has a solid mix of gentlemen's clubs concentrated around the Pittsburgh Avenue corridor in North Charleston and along the downtown peninsula. For groups looking for a more controlled, personalized experience, private strippers and male entertainers who come directly to your location have become the dominant choice — especially for bachelorette parties where the bride stays at the center of attention rather than competing with a club crowd.</p>
+          </div>
+
+          <div class="editorial-block">
+            <h3>What to Expect Booking a Stripper in Charleston SC</h3>
+            <p>Private entertainment bookings in Charleston typically require a deposit, a confirmed venue address, and a headcount. Most private male entertainers serving the Charleston area — including North Charleston, Mount Pleasant, West Ashley, Summerville, and the beach communities — will perform at short-term rentals, hotels, private homes, and event venues. Expect shows to run 30–60 minutes with interaction time included. Pricing varies based on duration, travel distance, and performer.</p>
+          </div>
+
+          <div class="pull-quote">
+            "Private male entertainment in Charleston SC — the show comes to you, wherever the party is."
+          </div>
+
+          <div class="editorial-block">
+            <h3>Charleston's Best Neighborhoods for Bachelorette Parties</h3>
+            <p>Downtown Charleston — specifically the King Street and Market Street corridors — remains the most popular starting point for bachelorette groups. Folly Beach and Sullivan's Island offer beach house options perfect for private shows. The Airbnb and vacation rental market around Charleston has made private stripper bookings particularly popular since groups have private, comfortable spaces without the logistics of a club. North Charleston venues like G Club offer the full club experience for groups who want to go out.</p>
+          </div>
+
+          <div class="editorial-block">
+            <h3>Finding Strippers Near Me in Charleston</h3>
+            <p>Searching "strippers near me" in Charleston SC will surface a mix of gentleman's clubs, escort directories, and private entertainer booking pages. The key distinction is between in-venue entertainment — where you go to them — and private bookings where the entertainer comes to your location. For bachelorette parties and girls' night out groups in Charleston, private male exotic dancers who perform at your Airbnb or hotel suite consistently rank as the preferred experience over going out to a club.</p>
+          </div>
+
+        </div>
+        <div class="col-lg-4 d-none d-lg-block">
+          <div style="position:sticky; top:100px;">
+            <div style="border:1px solid var(--border-color); padding:28px; margin-bottom:20px;">
+              <div class="footer-col-title">Quick Links</div>
+              <div class="footer-links">
+                <a href="#directory">→ Full Directory</a>
+                <a href="#private">→ Book Private Show</a>
+                <a href="#neighborhoods">→ Areas Served</a>
+                <a href="#faq">→ FAQ</a>
+              </div>
+            </div>
+            <div style="border:1px solid rgba(255,45,107,0.3); padding:28px; background:var(--dark-card-2);">
+              <div class="footer-col-title">Book Tonight</div>
+              <p style="color:var(--muted); font-size:0.88rem; margin-bottom:16px; font-weight:300;">Charleston's #1 private male entertainer available for bachelorette parties and private events.</p>
+              <a href="https://michaelatyourplace.com" rel="dofollow" class="btn-primary-hot d-block text-center" style="font-size:0.95rem;">
+                Book Michael →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">04 —</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8">
+
+          <div class="faq-item">
+            <div class="faq-q">Where can I find strippers near me in Charleston SC?</div>
+            <div class="faq-a">Charleston has several options depending on what you're looking for. For club-based adult entertainment, venues like G Club, Cheetah Charleston, and Secrets Cabaret are concentrated in the North Charleston and downtown peninsula areas. For private shows that come to your location anywhere in the greater Charleston area, <a href="https://www.michaelatyourplace.com">private male entertainers like Michael</a> serve all Charleston zip codes including North Charleston, Mount Pleasant, West Ashley, Summerville, and the beach communities.</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q">How do I book a private stripper in Charleston SC?</div>
+            <div class="faq-a">Private stripper bookings in Charleston typically involve contacting the entertainer directly through their booking page, confirming your date, venue address, and group size, and placing a deposit to secure the reservation. Most private entertainers serving Charleston require at least 24–48 hours notice, though same-day bookings are sometimes available. For bachelorette parties, booking 1–2 weeks in advance is recommended during peak spring and fall wedding season.</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q">What is the difference between a strip club and a private stripper in Charleston?</div>
+            <div class="faq-a">A strip club is a fixed venue where performers entertain multiple groups simultaneously in a public setting. A private stripper comes directly to your location — hotel, Airbnb, private home — and performs exclusively for your group. Private shows in Charleston are increasingly popular for bachelorette parties because they offer a personalized experience where the guest of honor stays the center of attention.</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q">Are private stripper shows legal in Charleston SC?</div>
+            <div class="faq-a">Private adult entertainment in South Carolina operates within specific legal parameters. Performances at private residences and venues not open to the public are generally permitted. Charleston-area private entertainers operate within local regulations. Always confirm venue appropriateness with your entertainer when booking.</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q">What areas near Charleston SC do private entertainers serve?</div>
+            <div class="faq-a">Most private male entertainers based in Charleston serve the full greater Charleston metro including North Charleston, Mount Pleasant, West Ashley, James Island, Johns Island, Summerville, Goose Creek, Hanahan, Folly Beach, Sullivan's Island, and Isle of Palms. Travel fees may apply for locations beyond a certain radius from downtown Charleston.</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="footer-brand">CLUB <span>STILETTOS</span></div>
+          <div class="footer-tagline">Charleston SC Adult Entertainment Directory</div>
+          <div class="footer-address">
+            2015 Pittsburgh Ave<br>
+            North Charleston, SC 29405<br>
+            (843) 722-1492<br>
+            Charleston, SC 29403
+          </div>
+        </div>
+        <div class="col-6 col-lg-2 mb-4 mb-lg-0">
+          <div class="footer-col-title">Directory</div>
+          <div class="footer-links">
+            <a href="#directory">All Listings</a>
+            <a href="#private">Private Shows</a>
+            <a href="#neighborhoods">Areas Served</a>
+            <a href="#faq">FAQ</a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 mb-4 mb-lg-0">
+          <div class="footer-col-title">Charleston Areas</div>
+          <div class="footer-links">
+            <a href="#neighborhoods">Downtown Charleston</a>
+            <a href="#neighborhoods">North Charleston</a>
+            <a href="#neighborhoods">Mount Pleasant</a>
+            <a href="#neighborhoods">West Ashley</a>
+            <a href="#neighborhoods">Summerville</a>
+            <a href="#neighborhoods">Folly Beach</a>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-col-title">Book Private Entertainment</div>
+          <p style="color:var(--muted); font-size:0.85rem; font-weight:300; margin-bottom:16px;">Charleston's top-rated private male entertainer for bachelorette parties and private events.</p>
+          <a href="https://michaelatyourplace.com" rel="dofollow" class="btn-outline-gold d-inline-block" style="font-size:0.95rem;">
+            Book a Charleston Male Exotic Dancer →
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex justify-content-between flex-wrap gap-2">
+        <span>© 2024 Club Stilettos Charleston Directory. All rights reserved.</span>
+        <span>Charleston, SC Adult Entertainment · Strippers Near Me · Private Shows</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
